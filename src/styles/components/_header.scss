@@ -1,0 +1,102 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+.header {
+    background-image: url('../img/burger-fons.jpg');
+    background-size: cover;
+    background-position: center;
+    // width: 100%;
+    // height: 100%;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    // padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 1s ease;
+    /* height: 85px; */
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 3px;
+
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+    @media (max-width: $mobile-bp) {
+        display: none;
+
+    }
+}
+
+.navbar-dark {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.logo__nav-img {
+    width: 100px;
+    height: 100px;
+}
+
+.header__list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px;
+}
+
+.header__link {
+    /* font-family: 'Meteorit Decco'; */
+    font-family: 'American Typewriter';
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.phone {
+    text-decoration: none;
+    font-family: 'American Typewriter';
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header__container {
+    text-align: center;
+    padding: 160px 0 160px;
+}
+
+.logo__nav-main {
+    width: 400px;
+
+    @media (max-width: $mobile-bp) {
+        width: 200px;
+    }
+}
+
+.text__container {
+    font-family: 'American Typewriter';
+    line-height: 1.5;
+    color: #ffffff;
+    padding: 40px 10px;
+
+
+    @media (max-width: $mobile-bp) {
+        line-height: 1.2;
+        // text-align: center;
+        width: 100%;
+    }
+}
+
+// .header__container {
+//     width: 100%;
+// }
+
+.text__container-title {
+    font-size: 28px;
+}
+
+.text__container-text {
+    font-size: 20px;
+}
