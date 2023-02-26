@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,53 +10,122 @@
     <link rel="stylesheet" href="./dist/css/main.css">
     <script defer src="./src/scripts/script.js"></script>
 </head>
+
 <body>
-     <header class="header">
-        <nav class="header__nav" >
-            <div class="logo__nav"><a href="#"><img class="logo__nav-img"  src="./src/img/logo_og_burger-nav.png" alt="Logo"></a></div>
+    <header class="header" id="header">
+        <nav class="header__nav">
+            <div class="logo__nav">
+                <a href="#header"><img class="logo__nav-img" src="./src/img/logo_og_burger-nav.png" alt="Logo"></a>
+            </div>
             <ul class="header__list">
-                <li><a class="header__link" href="#">Burgers / Бургери</a></li>
-                <li><a class="header__link" href="#">About / Хто ми</a></li>
-                <li><a class="header__link" href="#">Contacts / Контакти</a></li>
-                <li><a class="header__link" href="#">Location / Наша локація</a></li>
+                <li><a class="header__link" href="#burgers">Burgers / Бургери</a></li>
+                <li><a class="header__link" href="#about">About / Хто ми</a></li>
+                <li><a class="header__link" href="#contacts">Contacts / Контакти</a></li>
+                <li><a class="header__link" href="#location">Location / Наша локація</a></li>
             </ul>
             <div class="header__tel"><a class="phone" href="tel:+38068 218 5640">+38068 218 5640</a></div>
         </nav>
         <div class="header__container">
             <div class="logo__container"><img class="logo__nav-main" src="./src/img/logo_og_burger.png" alt="Logo"></div>
             <div class="text__container">
-                <h2 class="text__container-title" >OG Burger in Kyiv from LA</h2>
+                <h2 class="text__container-title">OG Burger in Kyiv from LA</h2>
                 <p class="text__container-text">OG Бургери в Києві за спеціальним рецептом з Los Angeles</p>
             </div>
         </div>
-     </header>
-     <main>
-        <section class="section__menu">
+    </header>
+
+    <main>
+        <section class="section__menu" id="burgers">
             <div class="section__menu-container">
                 <h1 class="section__menu-title">Burgers</h1>
                 <p class="section__menu-text">
-                Only fresh products and original recipes from LA with love. <br> 
-                Тільки свіжі продукти та оригінальні рецепти з Лос-Анджелеса з любов'ю.
+                    Only fresh products and original recipes from LA with love. <br> Тільки свіжі продукти та оригінальні рецепти з Лос-Анджелеса з любов'ю.
                 </p>
             </div>
             <div class="section__menu-menu"><img class="menu-img" src="./src/img/menu-burger.jpg" alt="menu"></div>
             <div class="section__menu-menu_revers"><img class="menu-img" src="./src/img/menu-revers.jpg" alt="menu revers"></div>
         </section>
-        <section class="section__about">
+
+        <section class="section__about" id="about">
+            <div class="section__about-block">
+                <p class="section__about-text">CALIFORNIA STYLE SMASH OG BURGER SIMPLICITY QUALITY CONSISTENCY</p>
+                <p class="section__about-text">ГАМБУРГЕР OG В КАЛІФОРНІЙСЬКОМУ СТИЛІ ПРОСТОТА ЦІЛІСНІСТЬ ЯКІСТЬ</p>
+
+                <h2 class="section__about-title">About Us <br> Хто ми</h2>
+                <div class="section__about-container">
+                    <div class="container-photo">
+                        <img class="photo-cont" src="./src/img/photo-cont.jpg" alt="photo">
+                    </div>
+                    <div class="container-block">
+                        <h3 class="container-title">Burgers and fries turn into a tasty family tradition from LA to Kyiv</h3>
+                        <p class="container-text">California style smash OG burger<br> Simplicity Quality Consistency</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__pressa">
+
+
+            <div class="block__pressa">
+                <div class="block-text">
+                    <a class="press-text" href="https://nashkiev.ua/eat/novoe-mesto-burgernaya-ogburger-vozle-stantsii-zolotie-vorota" target="_blank">
+                        <p class="press-text">НОВЕ МІСЦЕ <br> бургерна OG Burger біля станції «Золоті ворота»</p>
+                    </a>
+                </div>
+                <div class="block-content">
+                    <div>
+                        <img class="press-img" src="./src/img/nk-img.png" alt="NK burger img">
+                    </div>
+                    <a class="press-text" href="https://nashkiev.ua/eat/novoe-mesto-burgernaya-ogburger-vozle-stantsii-zolotie-vorota" target="_blank">
+                        <p class="press-text">НАШ КИЕВ</p>
+                    </a>
+                </div>
+
+            </div>
+            <div class="block__pressa">
+                <div class="block-text">
+                    <a class="press-text" href="https://www.the-village.com.ua/village/food/food-news/317169-burgerna-og-burger-na-reytarskiy" target="_blank">
+                        <p class="press-text">«Oригінальні бургери, які за смаком м'яса і булки не відрізняються <br> від каліфорнійських»</p>
+                    </a>
+                </div>
+                <div class="block-content">
+                    <div>
+                        <img class="press-img" src="./src/img/village-img.png" alt="village img">
+                    </div>
+                    <a class="press-text" href="https://www.the-village.com.ua/village/food/food-news/317169-burgerna-og-burger-na-reytarskiy" target="_blank">
+                        <p class="press-text">THE VILLAGE</p>
+                    </a>
+                </div>
+            </div>
 
         </section>
-     </main>
-     <footer class="footer">
+    </main>
+
+    <footer class="footer" id="contacts">
         <div class="footer__contacts">
             <a class="footer-phone" href="tel:+38068 218 5640">+380682185640</a>
             <a class="footer-mail" href="mailto:OGburgerKyiv@gmail.com">OGburgerKyiv@gmail.com</a>
             <p class="footer-adress">Reitarska St, 9 / вул. Рейтарська 9</p>
         </div>
         <h4 class="footer-text">Working hours from 12.00 am to 9.00 pm</h4>
-        <h4 class="footer-text">We take orders till 8:30 pm. You can for the 
-            order on website or pay by cash to our courier.
+        <h4 class="footer-text">We take orders till 8:30 pm. You can for the order on website or pay by cash to our courier.
         </h4>
-        <div class="footer-icon"></div>
-     </footer>
+        <div class="footer-icon">
+            <a href="https://www.instagram.com/ogburger.kyiv/" target="_blank">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 512 512">
+                <title></title>
+                <path d="M256.14 59.226c64.137 0 71.733 0.282 96.957 1.407 23.442 1.031 36.102 4.969 44.54 8.252 11.159 4.314 19.223 9.564 27.567 17.91 8.44 8.439 13.596 16.41 18.003 27.567 3.282 8.439 7.22 21.191 8.252 44.54 1.125 25.317 1.407 32.913 1.407 96.957s-0.281 71.733-1.407 96.957c-1.031 23.442-4.969 36.102-8.252 44.54-4.313 11.159-9.565 19.223-17.909 27.567-8.44 8.44-16.409 13.596-27.567 18.005-8.44 3.282-21.19 7.22-44.54 8.252-25.317 1.125-32.913 1.407-96.957 1.407s-71.733-0.282-96.957-1.407c-23.442-1.032-36.1-4.969-44.54-8.252-11.159-4.313-19.222-9.565-27.567-17.909-8.439-8.44-13.597-16.409-18.003-27.567-3.282-8.44-7.22-21.19-8.252-44.54-1.125-25.317-1.407-32.913-1.407-96.957s0.281-71.733 1.407-96.957c1.032-23.442 4.969-36.1 8.251-44.54 4.314-11.159 9.564-19.222 17.91-27.567 8.439-8.439 16.41-13.597 27.567-18.005 8.439-3.282 21.192-7.22 44.54-8.252 25.224-1.125 32.819-1.407 96.957-1.407zM256.14 15.999c-65.169 0-73.327 0.282-98.925 1.407-25.505 1.125-43.040 5.251-58.23 11.159-15.847 6.189-29.255 14.347-42.571 27.756-13.409 13.316-21.567 26.724-27.756 42.477-5.907 15.284-10.033 32.725-11.159 58.23-1.125 25.692-1.407 33.851-1.407 99.019s0.28 73.327 1.407 98.925c1.125 25.505 5.251 43.039 11.159 58.23 6.189 15.847 14.347 29.255 27.756 42.571 13.316 13.315 26.724 21.565 42.477 27.662 15.284 5.907 32.725 10.033 58.23 11.159 25.599 1.125 33.757 1.407 98.925 1.407s73.327-0.281 98.925-1.407c25.505-1.125 43.039-5.251 58.23-11.159 15.755-6.095 29.162-14.346 42.477-27.662s21.565-26.724 27.662-42.477c5.907-15.284 10.033-32.726 11.159-58.23 1.125-25.599 1.407-33.757 1.407-98.925s-0.281-73.327-1.407-98.925c-1.125-25.505-5.251-43.040-11.159-58.23-5.907-15.942-14.065-29.35-27.474-42.664-13.315-13.316-26.724-21.566-42.477-27.662-15.284-5.907-32.726-10.033-58.23-11.159-25.692-1.22-33.851-1.501-99.019-1.501v0z"></path>
+                <path d="M256.14 132.741c-68.076 0-123.305 55.23-123.305 123.305s55.23 123.305 123.305 123.305 123.305-55.229 123.305-123.305c0-68.076-55.229-123.305-123.305-123.305zM256.14 336.031c-44.165 0-79.984-35.82-79.984-79.984s35.82-79.984 79.984-79.984c44.164 0 79.985 35.82 79.985 79.984s-35.82 79.985-79.985 79.985z"></path>
+                <path d="M413.108 127.865c0 15.898-12.888 28.787-28.787 28.787s-28.787-12.889-28.787-28.787c0-15.898 12.888-28.787 28.787-28.787s28.787 12.889 28.787 28.787z"></path>
+            </svg>
+            </a>
+        </div>
+        <div class="footer-map" id="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5080.8493811055805!2d30.507585153593883!3d50.45181584981578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf880ad848f5%3A0xf8a79d20723a73af!2sOG%20Burger!5e0!3m2!1suk!2sua!4v1677403335119!5m2!1suk!2sua"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
 </body>
+
 </html>

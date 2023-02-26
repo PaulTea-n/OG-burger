@@ -19,17 +19,22 @@
     transition: background-color 1s ease;
     /* height: 85px; */
     box-shadow: rgb(0 0 0 / 20%) 0px 1px 3px;
-
     position: fixed;
     width: 100%;
     z-index: 100;
 
     @media (max-width: $mobile-bp) {
         display: none;
-
     }
 }
 
+// =============================
+nav li a.active {
+    color: aqua;
+    background-color: #B33F00;
+}
+
+// ================================================
 .navbar-dark {
     background-color: rgba(0, 0, 0, 0.75);
 }
@@ -54,12 +59,22 @@
     font-size: 18px;
 }
 
+.header__link:hover {
+    color: #B33F00;
+    transition: 0.5s ease;
+}
+
 .phone {
     text-decoration: none;
     font-family: 'American Typewriter';
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
+}
+
+.phone:hover {
+    color: #B33F00;
+    transition: 0.5s ease;
 }
 
 .header__container {
@@ -81,17 +96,11 @@
     color: #ffffff;
     padding: 40px 10px;
 
-
     @media (max-width: $mobile-bp) {
         line-height: 1.2;
-        // text-align: center;
         width: 100%;
     }
 }
-
-// .header__container {
-//     width: 100%;
-// }
 
 .text__container-title {
     font-size: 28px;
