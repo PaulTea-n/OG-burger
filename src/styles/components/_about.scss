@@ -1,0 +1,74 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+.section__about {
+    color: #000000;
+    font-family: 'American Typewriter';
+    padding: 50px 40px;
+    background-color: #F7F7F7;
+
+    @media (max-width: $mobile-bp) {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 10px;
+    }
+}
+
+.section__about-block {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section__about-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+    max-width: 400px;
+    line-height: 1.3;
+}
+
+.section__about-title {
+    font-family: 'Meteorit Decco';
+    font-size: 52px;
+    margin: 40px 0;
+}
+
+.section__about-container {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: $mobile-bp) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.photo-cont {
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.container-block {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 20px;
+
+    @media (max-width: $mobile-bp) {
+        padding-left: 0px;
+    }
+}
+
+.container-title {
+    font-size: 36px;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+.container-text {
+    font-size: 20px;
+    line-height: 1.3;
+}
