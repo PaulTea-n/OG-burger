@@ -11,25 +11,25 @@ window.addEventListener("scroll", function () {
 
 // =============================================
 
-// Отримайте всі посилання навігації
-const navLinks = document.querySelectorAll("nav a");
+const body = document.body;
+let lastScroll = 0;
 
-// Переберіть всі розділи на сторінці
-document.querySelectorAll("section").forEach((section) => {
-  // Отримайте верхню границю розділу
-  const sectionTop = section.offsetTop - 50;
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= 0) {
+    body.classList.remove("scroll-up");
+    return;
+  }
 
-  // При скролі до верхньої границі розділу
-  window.addEventListener("scroll", () => {
-    if (window.pageYOffset >= sectionTop) {
-      // Отримайте ідентифікатор розділу
-      const id = section.getAttribute("id");
-
-      // Видаліть клас active з усіх посилань навігації
-      navLinks.forEach((link) => link.classList.remove("active"));
-
-      // Додайте клас active до посилання з відповідним ідентифікатором
-      document.querySelector(`nav a[href="#${id}"]`).classList.add("active");
-    }
-  });
+  if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-up");
+    body.classList.add("scroll-down");
+  } else if (
+    currentScroll < lastScroll &&
+    body.classList.contains("scroll-down")
+  ) {
+    body.classList.remove("scroll-down");
+    body.classList.add("scroll-up");
+  }
+  lastScroll = currentScroll;
 });

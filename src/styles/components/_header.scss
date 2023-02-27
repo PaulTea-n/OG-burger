@@ -2,11 +2,9 @@
 @import './abstracts/mixins';
 
 .header {
-    background-image: url('../img/burger-fons.jpg');
+    background-image: url('/src/img/burger-fons.jpg');
     background-size: cover;
     background-position: center;
-    // width: 100%;
-    // height: 100%;
 }
 
 .header__nav {
@@ -14,14 +12,13 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    // padding: 10px;
     background-color: rgba(0, 0, 0, 0.3);
-    transition: background-color 1s ease;
-    /* height: 85px; */
+    transition: background-color 0.6s ease;
     box-shadow: rgb(0 0 0 / 20%) 0px 1px 3px;
     position: fixed;
     width: 100%;
     z-index: 100;
+    transition: all 0.6s ease-in-out;
 
     @media (max-width: $mobile-bp) {
         display: none;
@@ -29,9 +26,16 @@
 }
 
 // =============================
-nav li a.active {
-    color: aqua;
-    background-color: #B33F00;
+.scroll-down {
+    .header__nav {
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+.scroll-up {
+    .header__nav {
+        filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+    }
 }
 
 // ================================================
@@ -52,11 +56,10 @@ nav li a.active {
 }
 
 .header__link {
-    /* font-family: 'Meteorit Decco'; */
     font-family: 'American Typewriter';
     color: #ffffff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .header__link:hover {
