@@ -4,6 +4,7 @@ import gulpSass from "gulp-sass";
 import browserSync from "browser-sync";
 import minifyjs from "gulp-js-minify";
 import cleanCSS from "gulp-clean-css";
+import imagemin from "gulp-imagemin";
 
 const BS = browserSync.create();
 const sass = gulpSass(dartSass);
@@ -20,6 +21,22 @@ function minifyJs() {
     .src("./src/scripts/**/*.js")
     .pipe(minifyjs())
     .pipe(gulp.dest("./dist/script"));
+}
+
+function images() {
+  return gulp
+    .src("./src/img/**/*")
+    .pipe(
+      imagemin([
+        gifsicle({ interlaced: true }),
+        mozjpeg({ quality: 75, progressive: true }),
+        optipng({ optimizationLevel: 5 }),
+        svgo({
+          plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
+        }),
+      ])
+    )
+    .pipe(gulp.dest("./dist/img"));
 }
 
 // ----
@@ -47,6 +64,7 @@ export const dev = gulp.series(
   myFonts,
   minifyJs,
   cleanCss,
+  images,
   () => {
     BS.init({
       server: {

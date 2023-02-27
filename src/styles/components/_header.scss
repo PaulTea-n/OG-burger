@@ -2,7 +2,7 @@
 @import './abstracts/mixins';
 
 .header {
-    background-image: url('/src/img/burger-fons.jpg');
+    background-image: url('./src/img/burger-fons.jpg');
     background-size: cover;
     background-position: center;
 }
