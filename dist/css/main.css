@@ -13,9 +13,16 @@
   src: url("../fonts/ufonts.com_american-typewriter.ttf");
 }
 .header {
-  background-image: url("../img/burger-fons.jpg");
+  background-image: url("../img/art-fons-desck.jpg");
   background-size: cover;
   background-position: center;
+  height: 983px;
+}
+@media (max-width: 980px) {
+  .header {
+    background-image: url("../img/art-fons-mob.jpg");
+    height: auto;
+  }
 }
 
 .header__nav {
@@ -35,6 +42,10 @@
   .header__nav {
     display: none;
   }
+}
+
+.header__nav:hover {
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .scroll-down .header__nav {
@@ -88,15 +99,27 @@
 
 .header__container {
   text-align: center;
-  padding: 160px 0 160px;
+  padding-top: 250px;
+}
+@media (max-width: 980px) {
+  .header__container {
+    height: 145vw;
+  }
 }
 
 .logo__nav-main {
-  width: 400px;
+  width: 300px;
 }
+
+.text__container-title_logo {
+  color: #ffffff;
+  font-family: "Meteorit Decco";
+  font-size: 52px;
+}
+
 @media (max-width: 980px) {
-  .logo__nav-main {
-    width: 200px;
+  .logo__container {
+    display: none;
   }
 }
 
@@ -104,12 +127,13 @@
   font-family: "American Typewriter";
   line-height: 1.5;
   color: #ffffff;
-  padding: 40px 10px;
+  padding: 20px 10px;
 }
 @media (max-width: 980px) {
   .text__container {
     line-height: 1.2;
     width: 100%;
+    display: none;
   }
 }
 
