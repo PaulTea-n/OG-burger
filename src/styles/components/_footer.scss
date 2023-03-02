@@ -3,7 +3,6 @@
 
 .footer {
     background-color: black;
-    // background-color: aqua;
     color: #ffffff;
     margin-top: 260px;
     padding: 20px 40px;
@@ -38,10 +37,16 @@
 }
 
 .footer-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
     margin: 40px 10px;
+}
+
+.icon {
     background-color: #ffffff;
     width: 68px;
     height: 68px;
     border-radius: 16px;
-    padding: 8px;
+    padding: 6px;
 }
