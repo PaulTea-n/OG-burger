@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OG-burger</title>
-    <link rel="icon" type="image/png" href="/src/img/logo_og_burger-nav.png" />
+    <link rel="icon" type="image/png" href="./src/img/logo_og_burger-nav.png" />
     <link rel="stylesheet" href="./dist/css/main.css">
     <script defer src="./src/scripts/script.js"></script>
 </head>
@@ -21,15 +21,18 @@
                 <li><a class="header__link" href="#burgers">Burgers / Бургери</a></li>
                 <li><a class="header__link" href="#about">About / Хто ми</a></li>
                 <li><a class="header__link" href="#contacts">Contacts / Контакти</a></li>
-                <li><a class="header__link" href="#location">Location / Наша локація</a></li>
+                <li><a class="header__link" href="#location">Location / Наша локацiя</a></li>
             </ul>
             <div class="header__tel"><a class="phone" href="tel:+38068 218 5640">+38068 218 5640</a></div>
         </nav>
         <div class="header__container">
+
             <div class="logo__container"><img class="logo__nav-main" src="./src/img/logo_og_burger.png" alt="Logo"></div>
+
             <div class="text__container">
-                <h2 class="text__container-title">OG Burger in Kyiv from LA</h2>
-                <p class="text__container-text">OG Бургери в Києві за спеціальним рецептом з Los Angeles</p>
+                <h2 class="text__container-title_logo">OG BURGER</h2>
+                <h3 class="text__container-title">in Kyiv from LA</h3>
+                <p class="text__container-text">OG Бургери в Києвi за спецiальним рецептом з Los Angeles</p>
             </div>
         </div>
     </header>
@@ -38,9 +41,8 @@
         <section class="section__menu" id="burgers">
             <div class="section__menu-container">
                 <h1 class="section__menu-title">Burgers</h1>
-                <p class="section__menu-text">
-                    Only fresh products and original recipes from LA with love. <br> Тільки свіжі продукти та оригінальні рецепти з Лос-Анджелеса з любов'ю.
-                </p>
+                <p class="section__menu-text">Only fresh products and original recipes from LA with love.</p>
+                <p class="section__menu-text">Тiльки свiжi продукти та оригiнальнi рецепти з Лос-Анджелеса з любов'ю.</p>
             </div>
             <div class="section__menu-menu"><img class="menu-img" src="./src/img/menu-burger.jpg" alt="menu"></div>
             <div class="section__menu-menu_revers"><img class="menu-img" src="./src/img/menu-revers.jpg" alt="menu revers"></div>
@@ -48,10 +50,11 @@
 
         <section class="section__about" id="about">
             <div class="section__about-block">
-                <p class="section__about-text">CALIFORNIA STYLE SMASH OG BURGER SIMPLICITY QUALITY CONSISTENCY</p>
-                <p class="section__about-text">ГАМБУРГЕР OG В КАЛІФОРНІЙСЬКОМУ СТИЛІ ПРОСТОТА ЦІЛІСНІСТЬ ЯКІСТЬ</p>
-
-                <h2 class="section__about-title">About Us <br> Хто ми</h2>
+                <div class="section__mobile-block">
+                    <p class="section__about-text">CALIFORNIA STYLE SMASH OG BURGER SIMPLICITY QUALITY CONSISTENCY</p>
+                    <p class="section__about-text">ГАМБУРГЕР OG В КАЛIФОРНIЙСЬКОМУ СТИЛI ПРОСТОТА ЦIЛIСНIСТЬ ЯКIСТЬ</p>
+                    <h2 class="section__about-title">About Us <br> Хто ми</h2>
+                </div>
                 <div class="section__about-container">
                     <div class="container-photo">
                         <img class="photo-cont" src="./src/img/photo-cont.jpg" alt="photo">
@@ -113,7 +116,10 @@
         </h4>
         <div class="footer-icon">
             <a href="https://www.instagram.com/ogburger.kyiv/" target="_blank">
-                <img src="./src/img/instagram.svg" alt="instagram svg">
+                <img class="icon" src="./src/img/instagram.svg" alt="instagram svg">
+            </a>
+            <a href="https://www.tiktok.com/@ogburger.kyiv" target="_blank">
+                <img class="icon" src="./src/img/tiktok-icon.svg" alt="tiktok svg">
             </a>
         </div>
         <div class="footer-map" id="location">

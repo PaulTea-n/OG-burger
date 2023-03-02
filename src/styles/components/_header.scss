@@ -2,9 +2,16 @@
 @import './abstracts/mixins';
 
 .header {
-    background-image: url('/dist/img/burger-fons.jpg');
+    background-image: url('../img/art-fons-desck.jpg');
     background-size: cover;
     background-position: center;
+    position: relative;
+    padding: 0px 0px 20% 0px;
+
+    @media (max-width: $mobile-bp) {
+        background-image: url('../img/art-fons-mob.jpg');
+        height: auto;
+    }
 }
 
 .header__nav {
@@ -23,6 +30,10 @@
     @media (max-width: $mobile-bp) {
         display: none;
     }
+}
+
+.header__nav:hover {
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 // =============================
@@ -82,14 +93,27 @@
 
 .header__container {
     text-align: center;
-    padding: 160px 0 160px;
+    padding-top: 250px;
+    font-weight: bold;
+
+    @media (max-width: $mobile-bp) {
+        height: 145vw;
+    }
 }
 
 .logo__nav-main {
-    width: 400px;
+    width: 300px;
+}
 
+.text__container-title_logo {
+    color: #ffffff;
+    font-family: 'Meteorit Decco';
+    font-size: 52px;
+}
+
+.logo__container {
     @media (max-width: $mobile-bp) {
-        width: 200px;
+        display: none;
     }
 }
 
@@ -97,11 +121,12 @@
     font-family: 'American Typewriter';
     line-height: 1.5;
     color: #ffffff;
-    padding: 40px 10px;
+    padding: 20px 10px;
 
     @media (max-width: $mobile-bp) {
         line-height: 1.2;
         width: 100%;
+        display: none;
     }
 }
 
@@ -110,5 +135,5 @@
 }
 
 .text__container-text {
-    font-size: 20px;
+    font-size: 22px;
 }

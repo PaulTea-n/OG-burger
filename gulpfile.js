@@ -64,7 +64,7 @@ export const dev = gulp.series(
   myFonts,
   minifyJs,
   cleanCss,
-  images,
+  // images,
   () => {
     BS.init({
       server: {
