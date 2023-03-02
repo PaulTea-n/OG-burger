@@ -5,8 +5,10 @@
     background-image: url('../img/art-fons-desck.jpg');
     background-size: cover;
     background-position: center;
-    height: 983px;
+    position: relative;
+    padding: 0px 0px 20% 0px;
 
+    // height: 983px;
     @media (max-width: $mobile-bp) {
         background-image: url('../img/art-fons-mob.jpg');
         height: auto;
