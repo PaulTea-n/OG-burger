@@ -8,8 +8,8 @@
     position: relative;
     padding: 0px 0px 20% 0px;
 
-    @media (max-width: $mobile-bp) {
-        background-image: url('../img/new_baner-desck.jpg');
+    @media (max-width: 600px) {
+        background-image: url('../img/new_baner-mob.jpg');
         height: auto;
     }
 
