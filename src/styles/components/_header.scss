@@ -8,6 +8,7 @@
     position: relative;
     padding: 0px 0px 20% 0px;
 
+    // height: auto;
     @media (max-width: 600px) {
         background-image: url('../img/new_baner-mob.jpg');
         height: auto;
@@ -128,6 +129,10 @@
     color: #ffffff;
     font-family: 'Meteorit Decco';
     font-size: 52px;
+
+    @media (max-width: $mobile-bp) {
+        font-size: 46px;
+    }
 }
 
 .logo__container {
@@ -153,9 +158,17 @@
 
 .text__container-title {
     font-size: 28px;
+
+    @media (max-width: $mobile-bp) {
+        font-size: 24px;
+    }
 }
 
 .text__container-text {
     font-size: 22px;
     font-weight: bold;
+
+    @media (max-width: $mobile-bp) {
+        font-size: 22px;
+    }
 }
