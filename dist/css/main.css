@@ -110,7 +110,6 @@
   align-items: center;
   text-align: center;
   padding-top: 140px;
-  font-weight: bold;
   opacity: 0.9;
 }
 @media (max-width: 980px) {
@@ -147,11 +146,13 @@
   line-height: 1.5;
   color: #ffffff;
   padding: 20px 10px;
+  font-weight: bold;
 }
 @media (max-width: 980px) {
   .text__container {
     line-height: 1.2;
     width: 100%;
+    font-weight: 400;
   }
 }
 
@@ -161,6 +162,7 @@
 
 .text__container-text {
   font-size: 22px;
+  font-weight: bold;
 }
 
 @font-face {
