@@ -129,10 +129,6 @@
     color: #ffffff;
     font-family: 'Meteorit Decco';
     font-size: 52px;
-
-    @media (max-width: $mobile-bp) {
-        font-size: 46px;
-    }
 }
 
 .logo__container {
@@ -158,17 +154,9 @@
 
 .text__container-title {
     font-size: 28px;
-
-    @media (max-width: $mobile-bp) {
-        font-size: 24px;
-    }
 }
 
 .text__container-text {
     font-size: 22px;
     font-weight: bold;
-
-    @media (max-width: $mobile-bp) {
-        font-size: 22px;
-    }
 }
