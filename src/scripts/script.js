@@ -2,10 +2,19 @@ window.addEventListener("scroll", function() {
     const navbar = document.querySelector(".header__nav");
     const scrollPosition = window.scrollY;
 
+    // Додаємо класи для десктопного меню
     if (scrollPosition > 60) {
         navbar.classList.add("navbar-dark");
     } else {
         navbar.classList.remove("navbar-dark");
+    }
+
+    // Додаємо класи для мобільного меню
+    const mobNavbar = document.querySelector(".container__mob-menu");
+    if (scrollPosition > 60) {
+        mobNavbar.classList.add("navbar-dark");
+    } else {
+        mobNavbar.classList.remove("navbar-dark");
     }
 });
 // =============================================
@@ -14,24 +23,46 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", () => {
+    toggleMenu();
+});
 
-    /* Toggle active class */
+// Close mobile menu when clicking on a menu item
+document.querySelectorAll(".header__link").forEach(link => {
+    link.addEventListener("click", () => {
+        closeMenu();
+    });
+});
+
+// Close mobile menu when clicking outside of it or on the menu itself
+document.addEventListener("click", (e) => {
+    if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+        closeMenu();
+    }
+});
+
+// Close mobile menu when clicking on the menu itself
+navMenu.addEventListener("click", () => {
+    closeMenu();
+});
+
+// Toggle menu function
+function toggleMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 
-    /* Toggle aria-expanded value */
+    // Toggle aria-expanded attribute
     let menuOpen = navMenu.classList.contains("active");
-    console.log(menuOpen)
-    let newMenuOpenStatus = menuOpen;
-    hamburger.setAttribute("aria-expanded", newMenuOpenStatus);
-})
+    hamburger.setAttribute("aria-expanded", menuOpen);
+}
 
-// close mobile menu
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-    //   Need to add Toggle aria-expanded value here as well because it stays as true when you click a menu item
-}))
+// Close menu function
+function closeMenu() {
+    if (navMenu.classList.contains("active")) {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        hamburger.setAttribute("aria-expanded", false);
+    }
+}
 
 // =============================================
 
