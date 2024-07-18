@@ -160,3 +160,32 @@
     font-size: 22px;
     font-weight: bold;
 }
+
+// =========================================
+.branch-selection {
+    display: flex;
+    justify-content: space-around;
+    background-color: #B33F00;
+
+    @media (max-width: $mobile-bp) {
+        flex-direction: column;
+    }
+}
+
+.branch-selection a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.selection__logo img {
+    max-width: 200px;
+}
+
+.logo__title {
+    font-family: 'Meteorit Decco';
+    font-size: 52px;
+    color: #000;
+}
