@@ -8,6 +8,7 @@
     position: relative;
     padding: 0px 0px 20% 0px;
 
+    // height: auto;
     @media (max-width: 600px) {
         background-image: url('../img/new_baner-mob.jpg');
         height: auto;
@@ -158,4 +159,33 @@
 .text__container-text {
     font-size: 22px;
     font-weight: bold;
+}
+
+// =========================================
+.branch-selection {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3f90a6;
+
+    @media (max-width: $mobile-bp) {
+        flex-direction: column;
+    }
+}
+
+.branch-selection a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.selection__logo img {
+    max-width: 200px;
+}
+
+.logo__title {
+    font-family: 'Meteorit Decco';
+    font-size: 52px;
+    color: #000;
 }

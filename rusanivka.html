@@ -8,6 +8,8 @@
     <title>OG-burger</title>
     <link rel="icon" type="image/png" href="./src/img/new_logo.jpg" />
     <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="./src/scripts/script.js"></script>
 </head>
 
@@ -15,12 +17,13 @@
     <header class="header" id="header">
         <nav class="header__nav">
             <div class="logo__nav">
-                <a href="#header"><img class="logo__nav-img" src="./src/img/new_logo.jpg" alt="Logo"></a>
+                <a href="index.html"><img class="logo__nav-img" src="./src/img/new_logo.jpg" alt="Logo"></a>
             </div>
             <ul class="header__list">
-                <li><a class="header__link" href="reytarska.html">Reytarska / Рейтарська</a></li>
-                <li><a class="header__link" href="rusanivka.html">Rusanivka / Русанiвка</a></li>
-
+                <li><a class="header__link" href="#breakfasts">Breakfasts / Сніданки</a></li>
+                <li><a class="header__link" href="#bar">Bar / Бар</a></li>
+                <li><a class="header__link" href="#contacts">Contacts / Контакти</a></li>
+                <li><a class="header__link" href="#location">Location / Наша локацiя</a></li>
             </ul>
             <div class="delivery">
                 <a class="header__link" href="https://ogburgerall.choiceqr.com/?fbclid=PAZXh0bgNhZW0CMTEAAaZg76BDZHkm8TrOi7HMww3BfzY9sUPlOO9dVcrem3sj0NibGI-o-MxQo4Q_aem__jQ9gSajzA-FBthb5Y6xDg" target="_blank">Delivery / Доставка</a>
@@ -29,7 +32,7 @@
         <div class="header__container">
 
             <div class="logo__container">
-                <a href="#header"> <img class="logo__nav-main" src="./src/img/new_logo.jpg" alt="Logo"></a>
+                <a href="index.html"> <img class="logo__nav-main" src="./src/img/new_logo.jpg" alt="Logo"></a>
             </div>
 
             <div class="text__container">
@@ -40,27 +43,61 @@
         </div>
     </header>
 
-    <div class="branch-selection">
-        <a class="selection__logo" href="reytarska.html">
-            <img src="./src/img/reytarska-logo.PNG" alt="Reytarska Logo">
-            <h2 class="logo__title">Reytarska</h2>
-        </a>
-        <a class="selection__logo" href="rusanivka.html">
-            <img src="./src/img/rusanivka-logo.PNG" alt="Rusanivka Logo">
-            <h2 class="logo__title">Rusanivka</h2>
-        </a>
-    </div>
-
-
-    <!-- <main>
-        <section class="section__menu" id="burgers">
+    <main>
+        <section class="section__menu" id="breakfasts">
             <div class="section__menu-container">
-                <h1 class="section__menu-title">Burgers</h1>
+                <h1 class="section__menu-title">Breakfasts</h1>
                 <p class="section__menu-text">Only fresh products and original recipes from LA with love.</p>
                 <p class="section__menu-text">Тiльки свiжi продукти та оригiнальнi рецепти з Лос-Анджелеса з любов'ю.</p>
             </div>
-            <div class="section__menu-menu"><img class="menu-img" src="./src/img/menu-new.jpg" alt="menu"></div>
-            <div class="section__menu-menu"><img class="menu-img" src="./src/img/menu-cocktails-new.jpg" alt="menu cocktails"></div>
+            <div class="section__menu-menu"><img class="menu-img" src="./src/img/breakfasts-menu.jpg" alt="menu"></div>
+
+            <!-- ============== -->
+            <!-- Swiper -->
+            <div class="swiper-container" id="bar">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./src/img/bar-pages-0001.jpg" alt="menu cocktails">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/img/bar-pages-0002.jpg" alt="menu cocktails">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/img/bar-pages-0003.jpg" alt="menu cocktails">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/img/bar-pages-0004.jpg" alt="menu cocktails">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/img/bar-pages-0005.jpg" alt="menu cocktails">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/img/bar-pages-0006.jpg" alt="menu cocktails">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/img/bar-pages-0007.jpg" alt="menu cocktails">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./src/img/bar-pages-0008.jpg" alt="menu cocktails">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- ============== -->
+            <!-- <div class="section__menu-menu" id="bar"><img class="menu-img" src="./src/img/bar-pages-0001.jpg" alt="menu cocktails"></div>
+            <div class="section__menu-menu"><img class="menu-img" src="./src/img/bar-pages-0002.jpg" alt="menu cocktails"></div>
+            <div class="section__menu-menu"><img class="menu-img" src="./src/img/bar-pages-0003.jpg" alt="menu cocktails"></div>
+            <div class="section__menu-menu"><img class="menu-img" src="./src/img/bar-pages-0004.jpg" alt="menu cocktails"></div>
+            <div class="section__menu-menu"><img class="menu-img" src="./src/img/bar-pages-0005.jpg" alt="menu cocktails"></div>
+            <div class="section__menu-menu"><img class="menu-img" src="./src/img/bar-pages-0006 (1).jpg" alt="menu cocktails"></div>
+            <div class="section__menu-menu"><img class="menu-img" src="./src/img/bar-pages-0007.jpg" alt="menu cocktails"></div>
+            <div class="section__menu-menu"><img class="menu-img" src="./src/img/bar-pages-0008.jpg" alt="menu cocktails"></div> -->
+
             <div class="section__menu-menu_revers"><img class="menu-img" src="./src/img/menu-revers.jpg" alt="menu revers"></div>
         </section>
 
@@ -123,12 +160,11 @@
 
     <footer class="footer" id="contacts">
         <div class="footer__contacts">
-            <a class="footer-phone" href="tel:+38068 218 5640">+380682185640</a>
+            <a class="footer-phone" href="tel:+38098 219 5949">+380982195949</a>
             <a class="footer-mail" href="mailto:OGburgerKyiv@gmail.com">OGburgerKyiv@gmail.com</a>
-            <p class="footer-adress">Reitarska St, 9 / вул. Рейтарська 9</p>
+            <p class="footer-adress">12 Rusanivska Naberezhna / Русанівська Набережна 12</p>
         </div>
-        <h4 class="footer-text">Working hours from 12.00 am to 10.00 pm</h4>
-        <h4 class="footer-text">We take orders till 9.30 pm.</h4>
+        <h4 class="footer-text">Mon-Sun 9:00 AM - 10:00 PM, Fri-Sat 9:00 AM - 11:00 PM / Пн-Нд 9:00 - 22:00, Пт-Сб 9:00 - 23:00</h4>
         <div class="footer-icon">
             <a href="https://www.instagram.com/ogburger.kyiv/" target="_blank">
                 <img class="icon" src="./src/img/instagram.svg" alt="instagram svg">
@@ -138,10 +174,10 @@
             </a>
         </div>
         <div class="footer-map" id="location">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5080.8493811055805!2d30.507585153593883!3d50.45181584981578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf880ad848f5%3A0xf8a79d20723a73af!2sOG%20Burger!5e0!3m2!1suk!2sua!4v1677403335119!5m2!1suk!2sua"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9770527065625!2d30.589393176916545!3d50.441528088005704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf9d6b944d09%3A0xb5c1e30b42f233!2sOG%20Burger!5e0!3m2!1suk!2sua!4v1720976392835!5m2!1suk!2sua"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </footer> -->
+    </footer>
 </body>
 
 </html>
