@@ -168,7 +168,7 @@
 .branch-selection {
   display: flex;
   justify-content: space-around;
-  background-color: #3f90a6;
+  background-color: #33a378;
 }
 @media (max-width: 980px) {
   .branch-selection {
