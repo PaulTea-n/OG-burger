@@ -1,191 +1,324 @@
-@import './abstracts/variables';
-@import './abstracts/mixins';
+    @import './abstracts/variables';
+    @import './abstracts/mixins';
 
-.header {
-    background-image: url('../img/new_baner-desck.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    padding: 0px 0px 20% 0px;
+    .header {
+        background-image: url('../img/new_baner-desck.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        padding: 0px 0px 20% 0px;
 
-    // height: auto;
-    @media (max-width: 600px) {
-        background-image: url('../img/new_baner-mob.jpg');
-        height: auto;
+        // height: auto;
+        @media (max-width: 600px) {
+            background-image: url('../img/new_baner-mob.jpg');
+            height: auto;
+        }
+
+        @media (min-width: 1400px) {
+            background-size: contain;
+        }
     }
 
-    @media (min-width: 1400px) {
-        background-size: contain;
-    }
-}
-
-.header__nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    transition: background-color 0.6s ease;
-    box-shadow: rgb(0 0 0 / 20%) 0px 1px 3px;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    transition: all 0.6s ease-in-out;
-
-    @media (max-width: $mobile-bp) {
-        display: none;
-    }
-}
-
-.header__nav:hover {
-    background-color: rgba(0, 0, 0, 0.75);
-}
-
-// =============================
-.scroll-down {
     .header__nav {
-        transform: translate3d(0, -100%, 0);
-    }
-}
-
-.scroll-up {
-    .header__nav {
-        filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
-    }
-}
-
-// ================================================
-.navbar-dark {
-    background-color: rgba(0, 0, 0, 0.75);
-}
-
-.logo__nav-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-.header__list {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    padding: 10px;
-}
-
-.header__link {
-    font-family: 'American Typewriter';
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.header__link:hover {
-    color: #B33F00;
-    transition: 0.5s ease;
-}
-
-.phone {
-    text-decoration: none;
-    font-family: 'American Typewriter';
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.phone:hover {
-    color: #B33F00;
-    transition: 0.5s ease;
-}
-
-.header__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-top: 140px;
-    opacity: 0.9;
-
-    @media (max-width: $mobile-bp) {
-        height: 145vw;
-    }
-}
-
-.logo__nav-main {
-    width: 300px;
-    border-radius: 50%;
-
-    @media (max-width: 900px) {
-        margin-top: 10%;
-        width: 200px;
-    }
-
-    @media (max-width: 600px) {
-        margin-top: -40%;
-        width: 160px;
-    }
-}
-
-.text__container-title_logo {
-    color: #ffffff;
-    font-family: 'Meteorit Decco';
-    font-size: 52px;
-}
-
-.logo__container {
-    @media (max-width: $mobile-bp) {
-        // display: none;
-    }
-}
-
-.text__container {
-    font-family: 'American Typewriter';
-    line-height: 1.5;
-    color: #ffffff;
-    padding: 20px 10px;
-    font-weight: bold;
-
-    @media (max-width: $mobile-bp) {
-        line-height: 1.2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        transition: background-color 0.6s ease;
+        box-shadow: rgb(0 0 0 / 20%) 0px 1px 3px;
+        position: fixed;
         width: 100%;
-        font-weight: 400;
-        // display: none;
+        z-index: 100;
+        transition: all 0.6s ease-in-out;
+
+        @media (max-width: $mobile-bp) {
+            display: none;
+        }
     }
-}
 
-.text__container-title {
-    font-size: 28px;
-}
+    .header__nav:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 
-.text__container-text {
-    font-size: 22px;
-    font-weight: bold;
-}
+    // =============================
+    .scroll-down {
+        .header__nav {
+            transform: translate3d(0, -100%, 0);
+        }
+    }
 
-// =========================================
-.branch-selection {
-    display: flex;
-    justify-content: space-around;
-    background-color: #33a378;
+    .scroll-up {
+        .header__nav {
+            filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+        }
+    }
 
-    @media (max-width: $mobile-bp) {
+    // ================================================
+    .navbar-dark {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .logo__nav-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .header__list {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        padding: 10px;
+    }
+
+    .header__link {
+        font-family: 'American Typewriter';
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .header__link:hover {
+        color: #B33F00;
+        transition: 0.5s ease;
+    }
+
+    .phone {
+        text-decoration: none;
+        font-family: 'American Typewriter';
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .phone:hover {
+        color: #B33F00;
+        transition: 0.5s ease;
+    }
+
+    .header__container {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 140px;
+        opacity: 0.9;
+
+        @media (max-width: $mobile-bp) {
+            height: 145vw;
+        }
     }
-}
 
-.branch-selection a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
+    .logo__nav-main {
+        width: 300px;
+        border-radius: 50%;
 
-.selection__logo img {
-    max-width: 200px;
-}
+        @media (max-width: 900px) {
+            margin-top: 10%;
+            width: 200px;
+        }
 
-.logo__title {
-    font-family: 'Meteorit Decco';
-    font-size: 52px;
-    color: #000;
-}
+        @media (max-width: 600px) {
+            margin-top: -40%;
+            width: 160px;
+        }
+    }
+
+    .text__container-title_logo {
+        color: #ffffff;
+        font-family: 'Meteorit Decco';
+        font-size: 52px;
+    }
+
+    .logo__container {
+        @media (max-width: $mobile-bp) {
+            // display: none;
+        }
+    }
+
+    .text__container {
+        font-family: 'American Typewriter';
+        line-height: 1.5;
+        color: #ffffff;
+        padding: 20px 10px;
+        font-weight: bold;
+
+        @media (max-width: $mobile-bp) {
+            line-height: 1.2;
+            width: 100%;
+            font-weight: 400;
+            // display: none;
+        }
+    }
+
+    .text__container-title {
+        font-size: 28px;
+    }
+
+    .text__container-text {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .logo__block {
+        display: flex;
+    }
+
+    // =========================================
+    .container__mob-menu {
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: background-color 0.6s ease;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        transition: all 0.6s ease-in-
+    }
+
+    .nav-bar {
+        display: none;
+
+        @media (max-width: $mobile-bp) {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    .nav-branding {
+        font-size: 2rem;
+        font-weight: 600;
+        transition: color 500ms ease;
+    }
+
+    .nav-branding:hover,
+    .nav-branding:focus {
+        color: dodgerblue;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 104px;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: background-color 0.6s ease;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px;
+        z-index: 100;
+        width: 100%;
+        // height: 100%;
+        text-align: center;
+        transition: 750ms;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2em 0;
+    }
+
+    .nav-link {
+        transition: 400ms ease;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+        color: dodgerblue;
+    }
+
+    .hamburger {
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        background-color: #fff;
+        width: 24px;
+        /* The following 2 properties are essential in creating the "X" when the hamburger is clicked. If you change just 1 of the 2, then you need to find the proper combination for the other one */
+        height: 2px;
+        margin: 6px auto;
+        /*    -webkit-transition: all 300ms ease;  */
+        transition: all 300ms ease-in-out;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    @media (min-width: $mobile-bp) {
+        .nav-menu {
+            position: static;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1em;
+            width: auto;
+        }
+
+        .hamburger {
+            display: none;
+        }
+    }
+
+    // =========================================
+    .branch-selection {
+        display: flex;
+        min-height: 300px;
+
+        @media (max-width: $mobile-bp) {
+            flex-direction: column;
+        }
+    }
+
+    .reytarska,
+    .rusanivka {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background-size: cover;
+    }
+
+    .reytarska {
+        background-color: #204d65;
+    }
+
+    .rusanivka {
+        background-color: #402926;
+    }
+
+    .selection__logo {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .selection__logo img {
+        width: 200px;
+        /* Фіксована ширина для логотипів */
+        height: auto;
+        /* Автоматична висота для логотипів */
+        max-width: 100%;
+    }
+
+    .logo__title {
+        font-family: 'Meteorit Decco';
+        font-size: 52px;
+        color: #000;
+    }
