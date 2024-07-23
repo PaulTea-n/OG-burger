@@ -105,5 +105,9 @@ document.addEventListener('DOMContentLoaded', function() {
         zoom: {
             maxRatio: 2,
         },
+        grabCursor: true,
+        simulateTouch: true,
+        touchRatio: 1,
+        touchAngle: 45,
     });
 });
