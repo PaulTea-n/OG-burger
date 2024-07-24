@@ -90,7 +90,7 @@ window.addEventListener("scroll", () => {
 });
 // ====================================
 document.addEventListener('DOMContentLoaded', function() {
-    var swiper = new Swiper('.swiper-container', {
+    const swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
@@ -105,6 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
         zoom: {
             maxRatio: 2,
         },
-
+        grabCursor: true,
+        simulateTouch: true,
     });
 });
