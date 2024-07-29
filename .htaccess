@@ -1,0 +1,11 @@
+DirectoryIndex index.html
+RewriteEngine On
+
+# Перенаправлення index.html на кореневу адресу
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Перенаправлення reytarska.html на /reytarska
+RewriteRule ^reytarska$ reytarska.html [L]
+
+# Перенаправлення rusanivka.html на /rusanivka
+RewriteRule ^rusanivka$ rusanivka.html [L]
